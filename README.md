@@ -1,7 +1,9 @@
 ## Local setup
  - install Postgres
- - create user with psql: `CREATE USER sal WITH PASSWORD 'S@lStr0ng0n3' CREATEDB;`
+ - copy .env.local to .env
+ - create user with psql: `CREATE USER sal WITH PASSWORD 'salpassword' CREATEDB;`
  - create local DB: `CREATE DATABASE sal WITH OWNER=sal;`
+ - apply migration: `npx prisma migrate resolve --applied 0_init`
 
 ## Installation
 
